@@ -25,11 +25,8 @@ public class SearchAI {
 		WebElement searchButton=driver.findElement(By.name("btnK"));
 		searchButton.click();
 		
-//		if(driver.findElement(By.xpath("//div[text()='reCAPTCHA']")).isDisplayed())
-//		{
-			WebElement reCap=driver.findElement(By.xpath("//div[@class='recaptcha-checkbox-border']"));
-			reCap.click();
-//		}
+		driver.quit();
+		
 	}
 
 }
